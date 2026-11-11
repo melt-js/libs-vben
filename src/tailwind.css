@@ -1,0 +1,31 @@
+/*
+ * Tailwind 入口：层顺序 + Tailwind + 本包主题 + 图标插件。
+ *
+ * 各应用 / 远程包在自己的 CSS 里 import 这个文件，然后在同一份样式表里
+ * 继续写 @source 扫描自己的源码：
+ *
+ *   @import '@melt-js/libs-vben/tailwind';
+ *   @source '..';
+ *   @source '../../../comps-vben/src';  // 渲染了远程组件时
+ *
+ * 这样这一层就不需要知道任何消费方路径。
+ *
+ * 层顺序（必须先于 @import 'tailwindcss' 出现）：
+ * properties(Tailwind 的 --tw-* 回退变量层) < preflight(base) <
+ * UI 库组件样式(antd / el / td) < Tailwind 工具类，
+ * 使组件库样式（antdv-next 经 StyleProvider 注入 @layer antd；
+ * element-plus / tdesign 经各自应用的 vite css-layer 插件包入对应层）能被工具类覆盖。
+ * 与 internal/vite-config/src/plugins/css-layer.ts 中的 LAYER_ORDER_STATEMENT 保持一致。
+ */
+@layer properties, theme, base, ant, antd, el, td, components, utilities;
+
+@import 'tailwindcss';
+@import './theme.css';
+
+/*
+ * 图标类名（如 icon-[ant-design--alipay-circle-outlined]）：
+ * Iconify 的 Tailwind 4 插件，把图标转成 mask-image 工具类。
+ * 图标数据从本地 @iconify-json/<prefix> 或 @iconify/json 读取，不联网；
+ * 缺少对应集合时该工具类会被跳过（控制台 warn）。
+ */
+@plugin '@iconify/tailwind4';
