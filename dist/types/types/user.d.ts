@@ -1,4 +1,4 @@
-import type { BasicUserInfo } from '@melt-js/libs-vben/typings';
+import type { BasicUserInfo } from '../typings/index.js';
 /** 用户信息 */
 interface UserInfo extends BasicUserInfo {
     /**

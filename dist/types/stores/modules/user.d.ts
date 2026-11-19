@@ -1,4 +1,4 @@
-import type { BasicUserInfo } from '@melt-js/libs-vben/typings';
+import type { BasicUserInfo } from '../../typings/index.js';
 interface AccessState {
     /**
      * 用户信息
@@ -14,24 +14,7 @@ interface AccessState {
  */
 export declare const useUserStore: import("pinia").StoreDefinition<"core-user", AccessState, {
     /** JNPF's user selectors expect the upstream Vben getter name. */
-    getUserInfo: (state: {
-        userInfo: {
-            [x: string]: any;
-            avatar: string;
-            realName: string;
-            roles?: string[] | undefined;
-            userId: string;
-            username: string;
-        } | null;
-        userRoles: string[];
-    } & import("pinia").PiniaCustomStateProperties<AccessState>) => {
-        [x: string]: any;
-        avatar: string;
-        realName: string;
-        roles?: string[] | undefined;
-        userId: string;
-        username: string;
-    } | null;
+    getUserInfo: (state: any) => any;
 }, {
     setUserInfo(userInfo: BasicUserInfo | null): void;
     setUserRoles(roles: string[]): void;

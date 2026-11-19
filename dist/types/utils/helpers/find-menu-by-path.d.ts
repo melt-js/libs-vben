@@ -1,4 +1,4 @@
-import type { MenuRecordRaw } from '@melt-js/libs-vben/typings';
+import type { MenuRecordRaw } from '../../typings/index.js';
 declare function findMenuByPath(list: MenuRecordRaw[], path?: string): MenuRecordRaw | null;
 /**
  * 查找根菜单

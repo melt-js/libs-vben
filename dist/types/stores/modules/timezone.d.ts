@@ -11,28 +11,28 @@ declare const setTimezoneHandler: (handler: Partial<TimezoneHandler>) => void;
  * timezone支持模块
  */
 declare const useTimezoneStore: import("pinia").StoreDefinition<"core-timezone", Pick<{
-    timezone: import("vue").Ref<string, string>;
+    timezone: any;
     setTimezone: (timezone: string) => Promise<void>;
     getTimezoneOptions: () => Promise<{
         label: string;
         value: string;
     }[]>;
     $reset: () => void;
-}, "timezone">, Pick<{
-    timezone: import("vue").Ref<string, string>;
+}, any>, Pick<{
+    timezone: any;
     setTimezone: (timezone: string) => Promise<void>;
     getTimezoneOptions: () => Promise<{
         label: string;
         value: string;
     }[]>;
     $reset: () => void;
-}, never>, Pick<{
-    timezone: import("vue").Ref<string, string>;
+}, any>, Pick<{
+    timezone: any;
     setTimezone: (timezone: string) => Promise<void>;
     getTimezoneOptions: () => Promise<{
         label: string;
         value: string;
     }[]>;
     $reset: () => void;
-}, "$reset" | "setTimezone" | "getTimezoneOptions">>;
+}, any>>;
 export { setTimezoneHandler, useTimezoneStore };

@@ -1,4 +1,4 @@
-import type { BuiltinThemeType, TimezoneOption } from '@melt-js/libs-vben/typings';
+import type { BuiltinThemeType, TimezoneOption } from '../typings/index.js';
 interface BuiltinThemePreset {
     color: string;
     darkPrimaryColor?: string;

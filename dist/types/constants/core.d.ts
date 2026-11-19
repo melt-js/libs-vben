@@ -1,4 +1,4 @@
-import type { SupportedLanguagesType } from '@melt-js/libs-vben/typings';
+import type { SupportedLanguagesType } from '../typings/index.js';
 /**
  * @zh_CN 登录页面 url 地址
  */

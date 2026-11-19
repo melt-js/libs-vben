@@ -1,5 +1,5 @@
-import type { CustomPreferencesRecord, Preferences, PreferencesExtension } from '@melt-js/libs-vben/core-preferences';
-import type { DeepPartial } from '@melt-js/libs-vben/typings';
+import type { CustomPreferencesRecord, Preferences, PreferencesExtension } from '../core-preferences/index.js';
+import type { DeepPartial } from '../typings/index.js';
 /**
  * 如果你想所有的app都使用相同的默认偏好设置，你可以在这里定义
  * 而不是去修改 @vben-core/preferences 中的默认偏好设置
@@ -8,13 +8,13 @@ import type { DeepPartial } from '@melt-js/libs-vben/typings';
  */
 declare function defineOverridesPreferences(preferences: DeepPartial<Preferences>): {
     app?: {
-        accessMode?: import("@melt-js/libs-vben/typings").AccessModeType | undefined;
-        authPageLayout?: import("@melt-js/libs-vben/typings").AuthPageLayoutType | undefined;
+        accessMode?: import("../typings/index.js").AccessModeType | undefined;
+        authPageLayout?: import("../typings/index.js").AuthPageLayoutType | undefined;
         checkUpdatesInterval?: number | undefined;
         colorGrayMode?: boolean | undefined;
         colorWeakMode?: boolean | undefined;
         compact?: boolean | undefined;
-        contentCompact?: import("@melt-js/libs-vben/typings").ContentCompactType | undefined;
+        contentCompact?: import("../typings/index.js").ContentCompactType | undefined;
         contentCompactWidth?: number | undefined;
         contentPadding?: number | undefined;
         contentPaddingBottom?: number | undefined;
@@ -30,11 +30,11 @@ declare function defineOverridesPreferences(preferences: DeepPartial<Preferences
         enableRefreshToken?: boolean | undefined;
         enableStickyPreferencesNavigationBar?: boolean | undefined;
         isMobile?: boolean | undefined;
-        layout?: import("@melt-js/libs-vben/typings").LayoutType | undefined;
-        locale?: keyof import("@melt-js/libs-vben/typings").SupportedLanguages | undefined;
-        loginExpiredMode?: import("@melt-js/libs-vben/typings").LoginExpiredModeType | undefined;
+        layout?: import("../typings/index.js").LayoutType | undefined;
+        locale?: keyof import("../typings/index.js").SupportedLanguages | undefined;
+        loginExpiredMode?: import("../typings/index.js").LoginExpiredModeType | undefined;
         name?: string | undefined;
-        preferencesButtonPosition?: import("@melt-js/libs-vben/typings").PreferencesButtonPositionType | undefined;
+        preferencesButtonPosition?: import("../typings/index.js").PreferencesButtonPositionType | undefined;
         timezone?: string | undefined;
         watermark?: boolean | undefined;
         watermarkContent?: string | undefined;
@@ -45,7 +45,7 @@ declare function defineOverridesPreferences(preferences: DeepPartial<Preferences
         hideOnlyOne?: boolean | undefined;
         showHome?: boolean | undefined;
         showIcon?: boolean | undefined;
-        styleType?: import("@melt-js/libs-vben/typings").BreadcrumbStyleType | undefined;
+        styleType?: import("../typings/index.js").BreadcrumbStyleType | undefined;
     } | undefined;
     copyright?: {
         companyName?: string | undefined;
@@ -65,8 +65,8 @@ declare function defineOverridesPreferences(preferences: DeepPartial<Preferences
         enable?: boolean | undefined;
         height?: number | undefined;
         hidden?: boolean | undefined;
-        menuAlign?: import("@melt-js/libs-vben/typings").LayoutHeaderMenuAlignType | undefined;
-        mode?: import("@melt-js/libs-vben/typings").LayoutHeaderModeType | undefined;
+        menuAlign?: import("../typings/index.js").LayoutHeaderMenuAlignType | undefined;
+        mode?: import("../typings/index.js").LayoutHeaderModeType | undefined;
     } | undefined;
     logo?: {
         enable?: boolean | undefined;
@@ -80,7 +80,7 @@ declare function defineOverridesPreferences(preferences: DeepPartial<Preferences
     navigation?: {
         accordion?: boolean | undefined;
         split?: boolean | undefined;
-        styleType?: import("@melt-js/libs-vben/typings").NavigationStyleType | undefined;
+        styleType?: import("../typings/index.js").NavigationStyleType | undefined;
     } | undefined;
     shortcutKeys?: {
         enable?: boolean | undefined;
@@ -118,7 +118,7 @@ declare function defineOverridesPreferences(preferences: DeepPartial<Preferences
         showMaximize?: boolean | undefined;
         showMore?: boolean | undefined;
         showRefresh?: boolean | undefined;
-        styleType?: import("@melt-js/libs-vben/typings").TabsStyleType | undefined;
+        styleType?: import("../typings/index.js").TabsStyleType | undefined;
         visitHistory?: boolean | undefined;
         wheelable?: boolean | undefined;
     } | undefined;
@@ -183,7 +183,7 @@ declare function defineOverridesPreferences(preferences: DeepPartial<Preferences
         colorSuccess?: string | undefined;
         colorWarning?: string | undefined;
         fontSize?: number | undefined;
-        mode?: import("@melt-js/libs-vben/typings").ThemeModeType | undefined;
+        mode?: import("../typings/index.js").ThemeModeType | undefined;
         radius?: string | undefined;
         semiDarkHeader?: boolean | undefined;
         semiDarkSidebar?: boolean | undefined;
@@ -192,7 +192,7 @@ declare function defineOverridesPreferences(preferences: DeepPartial<Preferences
     transition?: {
         enable?: boolean | undefined;
         loading?: boolean | undefined;
-        name?: import("@melt-js/libs-vben/typings").PageTransitionType | {
+        name?: {
             readonly [x: number]: string | undefined;
             toString?: {} | undefined;
             charAt?: {} | undefined;
@@ -246,7 +246,7 @@ declare function defineOverridesPreferences(preferences: DeepPartial<Preferences
             isWellFormed?: {} | undefined;
             toWellFormed?: {} | undefined;
             [Symbol.iterator]?: {} | undefined;
-        } | undefined;
+        } | import("../typings/index.js").PageTransitionType | undefined;
         progress?: boolean | undefined;
     } | undefined;
     widget?: {
@@ -283,4 +283,4 @@ declare const appCopyrightPreferences: {
     settingShow: true;
 };
 export { appCopyrightPreferences, defineOverridesPreferences, definePreferencesExtension, };
-export * from '@melt-js/libs-vben/core-preferences';
+export * from '../core-preferences/index.js';

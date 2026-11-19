@@ -1,2 +1,2 @@
 export * from './core.js';
-export * from '@melt-js/libs-vben/shared/constants';
+export * from '../shared/constants/index.js';

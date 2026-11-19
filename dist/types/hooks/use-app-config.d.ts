@@ -1,4 +1,4 @@
-import type { ApplicationConfig } from '@melt-js/libs-vben/types/global';
+import type { ApplicationConfig } from '../types/global.js';
 /**
  * 由 vite-inject-app-config 注入的全局配置
  */

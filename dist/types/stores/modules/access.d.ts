@@ -1,5 +1,5 @@
 import type { RouteRecordRaw } from 'vue-router';
-import type { MenuRecordRaw } from '@melt-js/libs-vben/typings';
+import type { MenuRecordRaw } from '../../typings/index.js';
 type AccessToken = null | string;
 interface AccessState {
     /**

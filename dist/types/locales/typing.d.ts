@@ -1,4 +1,4 @@
-import type { SupportedLanguagesType } from '@melt-js/libs-vben/typings';
+import type { SupportedLanguagesType } from '../typings/index.js';
 export type { SupportedLanguagesType };
 export type ImportLocaleFn = () => Promise<{
     default: Record<string, string>;

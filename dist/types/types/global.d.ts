@@ -1,7 +1,7 @@
 // vue-router 的 RouteMeta 增强唯一来源是 @vben-core/typings/src/index.ts，
 // 此处不再重复声明；侧效果导入保证仅经由 `@vben/types/global` 子路径消费
 // 本包的程序（不经过 src/index.ts barrel）同样激活该增强。
-import '@melt-js/libs-vben/typings';
+import '../typings/index.js';
 
 export interface VbenAdminProAppConfigRaw {
   VITE_GLOB_API_URL: string;

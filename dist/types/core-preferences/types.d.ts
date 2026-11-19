@@ -1,4 +1,4 @@
-import type { AccessModeType, AuthPageLayoutType, BreadcrumbStyleType, BuiltinThemeType, ContentCompactType, DeepPartial, LayoutHeaderMenuAlignType, LayoutHeaderModeType, LayoutType, LoginExpiredModeType, NavigationStyleType, PageTransitionType, PreferencesButtonPositionType, SupportedLanguagesType, TabsStyleType, ThemeModeType } from '@melt-js/libs-vben/typings';
+import type { AccessModeType, AuthPageLayoutType, BreadcrumbStyleType, BuiltinThemeType, ContentCompactType, DeepPartial, LayoutHeaderMenuAlignType, LayoutHeaderModeType, LayoutType, LoginExpiredModeType, NavigationStyleType, PageTransitionType, PreferencesButtonPositionType, SupportedLanguagesType, TabsStyleType, ThemeModeType } from '../typings/index.js';
 type CustomPreferencesValue = boolean | number | string;
 interface CustomPreferencesOption<TValue extends string = string> {
     label: string;

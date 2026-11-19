@@ -1,7 +1,7 @@
 import type { ComputedRef, VNode } from 'vue';
 import type { RouteLocationNormalized, RouteLocationNormalizedLoaded, RouteLocationNormalizedLoadedGeneric, Router, RouteRecordNormalized } from 'vue-router';
-import type { TabDefinition } from '@melt-js/libs-vben/typings';
-import { Stack } from '@melt-js/libs-vben/shared/utils';
+import type { TabDefinition } from '../../typings/index.js';
+import { Stack } from '../../shared/utils/index.js';
 interface RouteCached {
     component: VNode;
     key: string;
@@ -126,7 +126,7 @@ export declare const useTabbarStore: import("pinia").StoreDefinition<"core-tabba
     /**
      * 刷新标签页
      */
-    refresh(router: Router | string): Promise<void>;
+    refresh(router: Router | string): Promise<any>;
     /**
      * 根据路由名称刷新指定标签页
      */

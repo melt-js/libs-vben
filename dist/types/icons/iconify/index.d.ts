@@ -1,8 +1,4 @@
-export * from '@melt-js/libs-vben/core-icons';
-export declare const MdiKeyboardEsc: import("vue").DefineComponent<{}, () => import("vue").VNode<import("vue").RendererNode, import("vue").RendererElement, {
-    [key: string]: any;
-}>, {}, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<{}> & Readonly<{}>, {}, {}, {}, {}, string, import("vue").ComponentProvideOptions, true, {}, any>;
+export * from '../../core-icons/index.js';
+export declare const MdiKeyboardEsc: any;
 /** JNPF table settings compatibility icon. */
-export declare const ArrowAlignLeft: import("vue").DefineComponent<{}, () => import("vue").VNode<import("vue").RendererNode, import("vue").RendererElement, {
-    [key: string]: any;
-}>, {}, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<{}> & Readonly<{}>, {}, {}, {}, {}, string, import("vue").ComponentProvideOptions, true, {}, any>;
+export declare const ArrowAlignLeft: any;

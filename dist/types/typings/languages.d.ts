@@ -6,7 +6,7 @@
  * 通过模块增强（declaration merging）追加语言键：
  *
  * ```ts
- * declare module '@melt-js/libs-vben/typings' {
+ * declare module './index.js' {
  *   interface SupportedLanguages {
  *     'zh-TW': '繁體中文';
  *   }

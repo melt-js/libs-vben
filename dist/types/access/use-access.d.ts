@@ -1,5 +1,5 @@
 declare function useAccess(): {
-    accessMode: import("vue").ComputedRef<import("../typings/index.js").AccessModeType>;
+    accessMode: any;
     hasAccessByCodes: (codes: string[]) => boolean;
     hasAccessByRoles: (roles: string[]) => boolean;
     toggleAccessMode: () => Promise<void>;

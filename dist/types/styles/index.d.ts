@@ -1,1 +1,1 @@
-import '@melt-js/libs-vben/design';
+import '../design/index.js';

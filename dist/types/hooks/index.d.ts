@@ -6,4 +6,4 @@ export * from './use-pagination.js';
 export * from './use-refresh.js';
 export * from './use-tabs.js';
 export * from './use-watermark.js';
-export * from '@melt-js/libs-vben/composables';
+export * from '../composables/index.js';

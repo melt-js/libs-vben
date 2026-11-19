@@ -1,4 +1,4 @@
 export * from './helpers/index.js';
-export * from '@melt-js/libs-vben/shared/cache';
-export * from '@melt-js/libs-vben/shared/color';
-export * from '@melt-js/libs-vben/shared/utils';
+export * from '../shared/cache/index.js';
+export * from '../shared/color/index.js';
+export * from '../shared/utils/index.js';

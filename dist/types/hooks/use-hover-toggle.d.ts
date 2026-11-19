@@ -12,7 +12,7 @@ interface HoverDelayOptions {
  * @param delay 延迟更新状态的时间，可以是数字或包含进入/离开延迟的配置对象
  * @returns 返回一个数组，第一个元素是一个 ref，表示鼠标是否在元素内部，第二个元素是一个控制器，可以通过 enable 和 disable 方法来控制监听器的启用和禁用
  */
-export declare function useHoverToggle(refElement: Arrayable<MaybeElementRef> | Ref<HTMLElement[] | null>, delay?: (() => number) | HoverDelayOptions | number): [Ref<boolean, boolean>, {
+export declare function useHoverToggle(refElement: Arrayable<MaybeElementRef> | Ref<HTMLElement[] | null>, delay?: (() => number) | HoverDelayOptions | number): [any, {
     enable(): void;
     disable(): void;
 }];

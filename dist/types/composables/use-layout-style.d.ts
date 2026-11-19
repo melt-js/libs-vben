@@ -1,10 +1,9 @@
-import type { CSSProperties } from 'vue';
 /**
  * @zh_CN content style
  */
 export declare function useLayoutContentStyle(): {
-    contentElement: import("vue").Ref<HTMLDivElement | null, HTMLDivElement | null>;
-    overlayStyle: import("vue").ComputedRef<CSSProperties>;
+    contentElement: any;
+    overlayStyle: any;
 };
 export declare function useLayoutHeaderStyle(): {
     getLayoutHeaderHeight: () => number;
