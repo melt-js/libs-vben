@@ -1,0 +1,67 @@
+{
+  "app": {
+    "name": "libs-vben",
+    "app_group_name": "libs-vben",
+    "git_repo_url": "",
+    "online_version": "2026.11.23",
+    "build_version": "2026.11.23",
+    "platform": "unpkg",
+    "create_at": "2026-11-22T19:57:14.823Z"
+  },
+  "version": {
+    "plugin_ver": "5.4.3",
+    "extract_mode": "build",
+    "sub_app_name": "libs-vben",
+    "sub_app_version": "libs-vben@2026.11.23",
+    "version_tag": "2026.11.23",
+    "src_map": {
+      "webDirPath": "/libs-vben/hel_dist",
+      "htmlIndexSrc": "/libs-vben/hel_dist/index.html",
+      "extractMode": "all",
+      "iframeSrc": "",
+      "chunkCssSrcList": [
+        "/libs-vben/hel_dist/assets/style-DWZDyJbB.css"
+      ],
+      "chunkJsSrcList": [
+        "/libs-vben/hel_dist/assets/hel-DiiEZxBc.js",
+        "/libs-vben/hel_dist/assets/classPrivateFieldSet2-DUVG_X94.js",
+        "/libs-vben/hel_dist/assets/components-Dm2cuct-.js",
+        "/libs-vben/hel_dist/assets/rolldown-runtime-Dwys_PaA.js",
+        "/libs-vben/hel_dist/assets/shared-runtime-w1XXoVy4.js",
+        "/libs-vben/hel_dist/assets/vendor-CmEiI6qj.js"
+      ],
+      "staticCssSrcList": [],
+      "staticJsSrcList": [],
+      "relativeCssSrcList": [],
+      "relativeJsSrcList": [],
+      "headAssetList": [
+        {
+          "tag": "script",
+          "append": true,
+          "attrs": {
+            "src": "/libs-vben/hel_dist/assets/hel-DiiEZxBc.js",
+            "type": "module",
+            "crossorigin": ""
+          }
+        },
+        {
+          "tag": "link",
+          "append": true,
+          "attrs": {
+            "href": "/libs-vben/hel_dist/assets/style-DWZDyJbB.css",
+            "rel": "stylesheet"
+          }
+        }
+      ],
+      "bodyAssetList": [],
+      "otherSrcList": [
+        "/libs-vben/hel_dist/index.html"
+      ],
+      "srvModSrcList": [],
+      "srvModSrcIndex": ""
+    },
+    "html_content": "<!DOCTYPE html>\n<html lang=\"zh-CN\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <title>libs-vben</title>\n    <script type=\"module\" crossorigin src=\"/libs-vben/hel_dist/assets/hel-DiiEZxBc.js\"></script>\n    <link rel=\"stylesheet\" href=\"/libs-vben/hel_dist/assets/style-DWZDyJbB.css\" />\n  </head>\n  <body>\n    <div id=\"app\"></div>\n  </body>\n</html>\n",
+    "create_at": "2026-11-22T19:57:14.823Z",
+    "desc": "this version meta is created by hel-dev-utils@5.4.3"
+  }
+}
