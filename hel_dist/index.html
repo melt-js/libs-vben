@@ -3,10 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <title>libs-vben</title>
-    <script type="module" crossorigin src="/libs-vben/hel_dist/assets/hel-DiiEZxBc.js"></script>
+    <script data-helappend="0" src="https://unpkg.com/vue@3.5.41/dist/vue.global.prod.js"></script>
+    <script data-helappend="0" src="https://unpkg.com/vue-router@5.2.0/dist/vue-router.global.prod.js"></script>
+    <script data-helappend="0" src="https://unpkg.com/pinia@3.0.4/dist/pinia.iife.prod.js"></script>
+    <script data-helappend="0" src="https://unpkg.com/vue-i18n@11.4.10/dist/vue-i18n.global.prod.js"></script>
+    <script type="module" crossorigin src="/libs-vben/hel_dist/assets/hel-DJIRq0Uv.js"></script>
     <link rel="stylesheet" href="/libs-vben/hel_dist/assets/style-DWZDyJbB.css" />
   </head>
   <body>
     <div id="app"></div>
+    <p style="margin:24px;font:14px/1.7 system-ui;color:#666">
+      libs-vben 是纯 lib 远程包（preferences / stores / locales / design 等带状态模块），
+      没有独立预览 UI。请由宿主先 preFetchLib('libs-vben')，再由 comps-vben 消费。
+    </p>
   </body>
 </html>

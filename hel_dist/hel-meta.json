@@ -3,17 +3,17 @@
     "name": "libs-vben",
     "app_group_name": "libs-vben",
     "git_repo_url": "",
-    "online_version": "2026.11.23",
-    "build_version": "2026.11.23",
+    "online_version": "2026.11.24",
+    "build_version": "2026.11.24",
     "platform": "unpkg",
-    "create_at": "2026-11-22T19:57:14.823Z"
+    "create_at": "2026-11-26T04:42:18.590Z"
   },
   "version": {
     "plugin_ver": "5.4.3",
     "extract_mode": "build",
     "sub_app_name": "libs-vben",
-    "sub_app_version": "libs-vben@2026.11.23",
-    "version_tag": "2026.11.23",
+    "sub_app_version": "libs-vben@2026.11.24",
+    "version_tag": "2026.11.24",
     "src_map": {
       "webDirPath": "/libs-vben/hel_dist",
       "htmlIndexSrc": "/libs-vben/hel_dist/index.html",
@@ -23,23 +23,56 @@
         "/libs-vben/hel_dist/assets/style-DWZDyJbB.css"
       ],
       "chunkJsSrcList": [
-        "/libs-vben/hel_dist/assets/hel-DiiEZxBc.js",
+        "/libs-vben/hel_dist/assets/hel-DJIRq0Uv.js",
         "/libs-vben/hel_dist/assets/classPrivateFieldSet2-DUVG_X94.js",
-        "/libs-vben/hel_dist/assets/components-Dm2cuct-.js",
+        "/libs-vben/hel_dist/assets/components-DGb1V2FL.js",
         "/libs-vben/hel_dist/assets/rolldown-runtime-Dwys_PaA.js",
         "/libs-vben/hel_dist/assets/shared-runtime-w1XXoVy4.js",
-        "/libs-vben/hel_dist/assets/vendor-CmEiI6qj.js"
+        "/libs-vben/hel_dist/assets/vendor-qWTsvJDc.js"
       ],
       "staticCssSrcList": [],
-      "staticJsSrcList": [],
+      "staticJsSrcList": [
+        "https://unpkg.com/vue@3.5.41/dist/vue.global.prod.js",
+        "https://unpkg.com/vue-router@5.2.0/dist/vue-router.global.prod.js",
+        "https://unpkg.com/pinia@3.0.4/dist/pinia.iife.prod.js",
+        "https://unpkg.com/vue-i18n@11.4.10/dist/vue-i18n.global.prod.js"
+      ],
       "relativeCssSrcList": [],
       "relativeJsSrcList": [],
       "headAssetList": [
         {
+          "tag": "staticScript",
+          "append": false,
+          "attrs": {
+            "src": "https://unpkg.com/vue@3.5.41/dist/vue.global.prod.js"
+          }
+        },
+        {
+          "tag": "staticScript",
+          "append": false,
+          "attrs": {
+            "src": "https://unpkg.com/vue-router@5.2.0/dist/vue-router.global.prod.js"
+          }
+        },
+        {
+          "tag": "staticScript",
+          "append": false,
+          "attrs": {
+            "src": "https://unpkg.com/pinia@3.0.4/dist/pinia.iife.prod.js"
+          }
+        },
+        {
+          "tag": "staticScript",
+          "append": false,
+          "attrs": {
+            "src": "https://unpkg.com/vue-i18n@11.4.10/dist/vue-i18n.global.prod.js"
+          }
+        },
+        {
           "tag": "script",
           "append": true,
           "attrs": {
-            "src": "/libs-vben/hel_dist/assets/hel-DiiEZxBc.js",
+            "src": "/libs-vben/hel_dist/assets/hel-DJIRq0Uv.js",
             "type": "module",
             "crossorigin": ""
           }
@@ -60,8 +93,8 @@
       "srvModSrcList": [],
       "srvModSrcIndex": ""
     },
-    "html_content": "<!DOCTYPE html>\n<html lang=\"zh-CN\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <title>libs-vben</title>\n    <script type=\"module\" crossorigin src=\"/libs-vben/hel_dist/assets/hel-DiiEZxBc.js\"></script>\n    <link rel=\"stylesheet\" href=\"/libs-vben/hel_dist/assets/style-DWZDyJbB.css\" />\n  </head>\n  <body>\n    <div id=\"app\"></div>\n  </body>\n</html>\n",
-    "create_at": "2026-11-22T19:57:14.823Z",
+    "html_content": "<!DOCTYPE html>\n<html lang=\"zh-CN\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <title>libs-vben</title>\n    <script data-helappend=\"0\" src=\"https://unpkg.com/vue@3.5.41/dist/vue.global.prod.js\"></script>\n    <script data-helappend=\"0\" src=\"https://unpkg.com/vue-router@5.2.0/dist/vue-router.global.prod.js\"></script>\n    <script data-helappend=\"0\" src=\"https://unpkg.com/pinia@3.0.4/dist/pinia.iife.prod.js\"></script>\n    <script data-helappend=\"0\" src=\"https://unpkg.com/vue-i18n@11.4.10/dist/vue-i18n.global.prod.js\"></script>\n    <script type=\"module\" crossorigin src=\"/libs-vben/hel_dist/assets/hel-DJIRq0Uv.js\"></script>\n    <link rel=\"stylesheet\" href=\"/libs-vben/hel_dist/assets/style-DWZDyJbB.css\" />\n  </head>\n  <body>\n    <div id=\"app\"></div>\n    <p style=\"margin:24px;font:14px/1.7 system-ui;color:#666\">\n      libs-vben 是纯 lib 远程包（preferences / stores / locales / design 等带状态模块），\n      没有独立预览 UI。请由宿主先 preFetchLib('libs-vben')，再由 comps-vben 消费。\n    </p>\n  </body>\n</html>\n",
+    "create_at": "2026-11-26T04:42:18.590Z",
     "desc": "this version meta is created by hel-dev-utils@5.4.3"
   }
 }
